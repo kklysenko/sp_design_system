@@ -1,0 +1,40 @@
+{
+  "name": "63p_design_system",
+  "version": "1.0.0",
+  "description": "Design system for development front-side of service 63pokupki.ru based on Vue framework",
+  "main": "entry.js",
+  "scripts": {
+    "build": "webpack --mode development --config webpack.config.js",
+    "live": "webpack-dev-server --open --mode development --config webpack.config.liveserver.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dmitry Kuznetsov",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "9.1.5",
+    "copy-webpack-plugin": "4.5.2",
+    "css-loader": "1.0.0",
+    "cssnano": "^4.1.10",
+    "exports-loader": "0.7.0",
+    "file-loader": "2.0.0",
+    "html-loader": "0.5.5",
+    "html-webpack-plugin": "3.2.0",
+    "imports-loader": "0.8.0",
+    "mini-css-extract-plugin": "0.4.3",
+    "node-sass": "^4.11.0",
+    "postcss": "7.0.5",
+    "postcss-cli": "^6.1.2",
+    "postcss-import": "12.0.0",
+    "postcss-loader": "3.0.0",
+    "postcss-preset-env": "6.0.10",
+    "sass-loader": "7.1.0",
+    "style-loader": "0.23.0",
+    "stylelint": "^9.6.0",
+    "ts-loader": "^5.3.3",
+    "ts-node": "^8.0.2",
+    "webpack": "4.20.2",
+    "webpack-cli": "3.1.2",
+    "webpack-dev-server": "^3.3.1",
+    "css-mqpacker": "7.0.0"
+  }
+}
