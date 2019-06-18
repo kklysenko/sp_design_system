@@ -25,7 +25,7 @@
 ```
 <a class="btn"></a>
 ```
-Не правильно:
+Неправильно:
 ```
 <a class="blue"></a>
 ```
@@ -67,7 +67,7 @@
   </span>
 </a>
 ```
-Не правильно:
+Неправильно:
 ```
 <a class="filterTable">
   <span class="filterTable-span">
@@ -93,9 +93,16 @@
  font-weight: 300;
 }
 ```
-Не правильно:
+Неправильно:
 ```css
 h1 {
+ font-size:1.5em;
+ font-weight: 300;
+}
+```
+Очень неправильно:
+```css
+h1.h1 {
  font-size:1.5em;
  font-weight: 300;
 }
