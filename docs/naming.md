@@ -15,7 +15,7 @@
 ### Имя блока задаёт пространство имен содержащихся внутри него элементов.
 
 
-### При написании составных имен, используем стиль **[lowerCamelCase](https://ru.wikipedia.org/wiki/CamelCase).
+### При написании составных имен, используем стиль [lowerCamelCase](https://ru.wikipedia.org/wiki/CamelCase).
 
 ```html
 <a class="filterTable"></a>
