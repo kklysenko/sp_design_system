@@ -35,14 +35,12 @@
 
 **При написании составных имен, используем стиль** **[lowerCamelCase](https://ru.wikipedia.org/wiki/CamelCase)**.
 
-Пример:
 ```html
 <a class="filterTable"></a>
 ```
 
 **Имя элемента отделяется от имени блока одним минусом** **"-"**
 
-Пример:
 ```html
 <a class="filterTable">
   <span class="filterTable-span"></span>
@@ -51,7 +49,6 @@
 
 **Имя модификатора отделяется от имени блока или элемента одним подчеркиванием** **"_"**
 
-Пример:
 ```html
 <a class="filterTable">
   <span class="filterTable-span filterTable-span_primary"></span>
@@ -78,7 +75,6 @@
 
 **Состояние задаётся через добавление класса с префиксом "is-"**
 
-Пример:
 ```html
 <a class="link is-hidden"></a>
 ```
@@ -124,7 +120,7 @@ h1.h1 {
  margin: 1.5em;
 }
 ```
-- Модицикации добавляются через присвоение доплонительного класса с модификатором: 
+- Модицикации добавляются через присвоение дополнительного класса с модификатором.
 ```html
 <a class="filterTable">
   <a class="link link_secondary filterTable-link"></a>
