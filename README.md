@@ -28,7 +28,8 @@
 ```
 <a class="blue"></a>
 ```
-**Имя блока задаёт пространство имен содержащихся внутри него элементов. **
+
+**Имя блока задаёт пространство имен содержащихся внутри него элементов.**
 
 
 **При написании составных имен, используем стиль** **[lowerCamelCase](https://ru.wikipedia.org/wiki/CamelCase)**.
@@ -52,4 +53,27 @@
 <a class="filterTable">
   <span class="filterTable-span filterTable-span_primary"></span>
 </a>
+```
+**Пример вложенности элементов внутри блока**
+Правильно:
+```
+<a class="filterTable">
+  <span class="filterTable-span">
+    <img class="filterTable-image">
+  </span>
+</a>
+```
+Не правильно:
+```
+<a class="filterTable">
+  <span class="filterTable-span">
+    <img class="filterTable-span-image">
+  </span>
+</a>
+```
+
+**Состояние задаётся через добавление класса с префиксом "is-"**
+Пример:
+```
+<a class="link is-hidden"></a>
 ```
