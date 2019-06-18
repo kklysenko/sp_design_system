@@ -22,11 +22,11 @@
 **Название блока и элемента должно характеризовать его смысл, а не внешний вид.**
 
 Правильно:
-```
+```html
 <a class="btn"></a>
 ```
 Неправильно:
-```
+```html
 <a class="blue"></a>
 ```
 
@@ -36,14 +36,14 @@
 **При написании составных имен, используем стиль** **[lowerCamelCase](https://ru.wikipedia.org/wiki/CamelCase)**.
 
 Пример:
-```
+```html
 <a class="filterTable"></a>
 ```
 
 **Имя элемента отделяется от имени блока одним минусом** **"-"**
 
 Пример:
-```
+```html
 <a class="filterTable">
   <span class="filterTable-span"></span>
 </a>
@@ -52,7 +52,7 @@
 **Имя модификатора отделяется от имени блока или элемента одним подчеркиванием** **"_"**
 
 Пример:
-```
+```html
 <a class="filterTable">
   <span class="filterTable-span filterTable-span_primary"></span>
 </a>
@@ -60,7 +60,7 @@
 **Пример вложенности элементов внутри блока**
 
 Правильно:
-```
+```html
 <a class="filterTable">
   <span class="filterTable-span">
     <img class="filterTable-image">
@@ -68,7 +68,7 @@
 </a>
 ```
 Неправильно:
-```
+```html
 <a class="filterTable">
   <span class="filterTable-span">
     <img class="filterTable-span-image">
@@ -79,7 +79,7 @@
 **Состояние задаётся через добавление класса с префиксом "is-"**
 
 Пример:
-```
+```html
 <a class="link is-hidden"></a>
 ```
 ## Стилизация
@@ -122,5 +122,20 @@ h1.h1 {
 }
 .filterTable-link {
  margin: 1.5em;
+}
+```
+- Модицикации добавляются через присвоение доплонительного класса с модификатором: 
+```html
+<a class="filterTable">
+  <a class="link link_secondary filterTable-link"></a>
+</a>
+```
+```css
+.link {
+ font-size:1.5em;
+ font-weight: 300;
+}
+.link_secondary {
+  color: red;
 }
 ```
